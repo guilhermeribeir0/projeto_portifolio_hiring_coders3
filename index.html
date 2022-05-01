@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Ribeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/fd1a657d28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png">
+        </div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="https://github.com/guilhermeribeir0" target="_blank" rel="noreferrer noopener">Github</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="principal">
+                <div class="name">
+                    <h1>Guilherme Ribeiro</h1>
+                    <h5>Full Stack Development Student</h5>
+                </div>
+
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fa-solid fa-circle-chevron-down"></i>
+                </div>
+
+                <div style="display: none;" id="about">
+                    <p>
+                        Olá, me chamo Guilherme. Bem vindo(a) ao meu site.    
+                    </p>
+                    <p>
+                        Sou recém-graduado em Gestão de Tecnologia da Informação e atualmente estou estudando desenvolvimento Full Stack. Tenho conhecimentos em <b>Java</b>, <b>Html</b>, <b>CSS</b>, <b>JS</b> e bancos de dados relacionais (<b>MySQL</b> e <b>SQL Server</b>).
+                    </p>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h3>Deixe seu contato abaixo &cudarrr;</h3>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Informe seu email">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <p>Desenvolvido por <b>Guilherme Ribeiro</b>&reg;</p>
+            </footer>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
