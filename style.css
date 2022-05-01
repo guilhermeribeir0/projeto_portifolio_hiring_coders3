@@ -167,19 +167,34 @@ header ul li a:hover {
     .form {
         width: 100%;
     }
+
+    .container .principal .name h1 {
+        font-size: 40px;
+    }
+
+    .container .principal .name h5 {
+        font-size: 20px;
+    }
+
+    #about p {
+        font-size: 14px;
+        max-width: 80%;
+        text-align: justify;
+    }
 }
 
 @media only screen and (max-width: 480px) {
 
     .container .principal .name h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .container .principal .name h5 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     #about p {
+        font-size: 14px;
         max-width: 80%;
         text-align: justify;
     }
@@ -200,10 +215,10 @@ header ul li a:hover {
         font-size: 12px;
         width: 15%;
         padding: 6px 12px;
-        background: linear-gradient(to right, rgb(212, 212, 212) 50%, #c09717 50%);
+        background: linear-gradient(to right, #fff 50%, #1744c0 50%);
         background-size: 200% 100%;
         background-position: right bottom;
-        color: #203A43;
+        color: #fff;
         font-weight: 600;
         border: none;
         cursor: pointer;
